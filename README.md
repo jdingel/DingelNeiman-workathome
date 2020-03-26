@@ -1,4 +1,4 @@
-This repository contains the code underlying the note "[How Many Jobs Can be Done at Home?](http://faculty.chicagobooth.edu/jonathan.dingel/research/DingelMiscioDavis.pdf)" by Jonathan Dingel and Brent Neiman.
+This repository contains the code underlying the note "[How Many Jobs Can be Done at Home?](DingelNeiman-workathome.pdf)" by Jonathan Dingel and Brent Neiman.
 
 ## Results
 
