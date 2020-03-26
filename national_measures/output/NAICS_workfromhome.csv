@@ -1,0 +1,21 @@
+NAICS,NAICS_TITLE,teleworkable_manual_emp,teleworkable_manual_wage,teleworkable_emp,teleworkable_wage
+11,"Agriculture, Forestry, Fishing and Hunting",.054734729,.10695023,.075921237,.13027954
+21,"Mining, Quarrying, and Oil and Gas Extraction",.21036951,.31011897,.24825282,.36553234
+22,Utilities,.36985531,.41298309,.35434198,.39104742
+23,Construction,.14353158,.18945056,.16321523,.19312163
+31-33,Manufacturing,.22953789,.37583601,.21540716,.34471667
+42,Wholesale Trade,.41835341,.55347383,.50769448,.65555972
+44-45,Retail Trade,.11203653,.17865057,.14138186,.21275218
+48-49,Transportation and Warehousing,.13690154,.18554465,.18053821,.23644885
+51,Information,.62327445,.72074449,.67828643,.75766051
+52,Finance and Insurance,.73137891,.80774504,.73325276,.82145065
+53,Real Estate and Rental and Leasing,.31254151,.42102721,.40887314,.52784008
+54,"Professional, Scientific, and Technical Services",.75884557,.82105213,.76778555,.82624227
+55,Management of Companies and Enterprises,.75478303,.82206088,.75841171,.82297999
+56,Administrative and Support and Waste Management and Remediation Services,.28415635,.39931738,.30197486,.41985819
+61,Educational Services,.70948505,.61174703,.74003851,.6293357
+62,Health Care and Social Assistance,.18603338,.18316416,.21760128,.21870004
+71,"Arts, Entertainment, and Recreation",.15889172,.26500109,.27909553,.34736288
+72,Accommodation and Food Services,.027766241,.061951783,.034402508,.066808291
+81,Other Services (except Public Administration),.24750608,.37196988,.27381158,.37572992
+99,"Federal, State, and Local Government, excluding state and local schools and hospitals and the U.S. Postal Service (OES Designation)",.3604888,.4248057,.37688097,.42048061
