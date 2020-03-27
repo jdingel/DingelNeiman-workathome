@@ -5,6 +5,7 @@ This repository contains the code underlying the note "[How Many Jobs Can be Don
 If you simply want to download our results without running any replication code, you can grab the following CSV files:
 - [industry-level results](national_measures/output/NAICS_workfromhome.csv)
 - [metropolitan-level results](MSA_measures/output/MSA_workfromhome.csv)
+- [occupation-level results](occ_onet_scores/output/occupations_workathome.csv)
 
 ## Code organization
 
