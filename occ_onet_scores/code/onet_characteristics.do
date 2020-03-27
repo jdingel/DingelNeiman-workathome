@@ -113,3 +113,7 @@ merge m:1 onetsoccode using `tf_occtitles', assert(using match) keep(match) noge
 gen byte teleworkable = (email_lessthanmonthly==0 & outdoors_everyday==0 & violentpeople_atleastweekly==0 & safetyequip_majority == 0 & minorhurt_atleastweekly==0 & physical_activities==0 & handlingobjects==0 & control_machines==0 & operate_equipment==0 & dealwithpublic==0 & repair_mechequip==0 & repair_elecequip==0 & inspect_equip==0 & disease_atleastweekly==0 & walking_majority==0)
 keep onetsoccode title teleworkable n
 save "../output/onet_teleworkable.dta", replace
+
+//Export CSV for distribution
+keep onetsoccode title teleworkable
+export delimited using "../output/occupations_workathome.csv", replace
