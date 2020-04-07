@@ -17,10 +17,10 @@ onetsoccode,title,teleworkable
 11-3051.04,Biomass Power Plant Managers,0
 11-3051.06,Hydroelectric Production Managers,0
 11-3061.00,Purchasing Managers,1
-11-3071.01,Transportation Managers,0
+11-3071.01,Transportation Managers,1
 11-3071.02,Storage and Distribution Managers,0
 11-3071.03,Logistics Managers,1
-11-3111.00,Compensation and Benefits Managers,0
+11-3111.00,Compensation and Benefits Managers,1
 11-3121.00,Human Resources Managers,1
 11-3131.00,Training and Development Managers,1
 11-9013.01,Nursery and Greenhouse Managers,0
@@ -30,7 +30,7 @@ onetsoccode,title,teleworkable
 11-9031.00,"Education Administrators, Preschool and Childcare Center/Program",0
 11-9032.00,"Education Administrators, Elementary and Secondary School",1
 11-9033.00,"Education Administrators, Postsecondary",1
-11-9039.01,Distance Learning Coordinators,0
+11-9039.01,Distance Learning Coordinators,1
 11-9039.02,Fitness and Wellness Coordinators,1
 11-9041.00,Architectural and Engineering Managers,1
 11-9041.01,Biofuels/Biodiesel Technology and Product Development Managers,0
@@ -44,12 +44,12 @@ onetsoccode,title,teleworkable
 11-9121.02,Water Resource Specialists,1
 11-9131.00,Postmasters and Mail Superintendents,1
 11-9141.00,"Property, Real Estate, and Community Association Managers",1
-11-9151.00,Social and Community Service Managers,0
+11-9151.00,Social and Community Service Managers,1
 11-9161.00,Emergency Management Directors,0
 11-9199.01,Regulatory Affairs Managers,1
 11-9199.02,Compliance Managers,1
 11-9199.03,Investment Fund Managers,1
-11-9199.04,Supply Chain Managers,0
+11-9199.04,Supply Chain Managers,1
 11-9199.07,Security Managers,1
 11-9199.08,Loss Prevention Managers,1
 11-9199.09,Wind Energy Operations Managers,0
@@ -60,20 +60,20 @@ onetsoccode,title,teleworkable
 13-1022.00,"Wholesale and Retail Buyers, Except Farm Products",1
 13-1023.00,"Purchasing Agents, Except Wholesale, Retail, and Farm Products",1
 13-1031.01,"Claims Examiners, Property and Casualty Insurance",1
-13-1031.02,"Insurance Adjusters, Examiners, and Investigators",0
+13-1031.02,"Insurance Adjusters, Examiners, and Investigators",1
 13-1032.00,"Insurance Appraisers, Auto Damage",0
 13-1041.01,Environmental Compliance Inspectors,0
 13-1041.02,Licensing Examiners and Inspectors,0
 13-1041.03,Equal Opportunity Representatives and Officers,1
 13-1041.04,Government Property Inspectors and Investigators,1
 13-1041.06,Coroners,0
-13-1041.07,Regulatory Affairs Specialists,0
-13-1051.00,Cost Estimators,0
+13-1041.07,Regulatory Affairs Specialists,1
+13-1051.00,Cost Estimators,1
 13-1071.00,Human Resources Specialists,1
 13-1074.00,Farm Labor Contractors,1
-13-1075.00,Labor Relations Specialists,0
+13-1075.00,Labor Relations Specialists,1
 13-1081.00,Logisticians,1
-13-1081.01,Logistics Engineers,0
+13-1081.01,Logistics Engineers,1
 13-1081.02,Logistics Analysts,1
 13-1111.00,Management Analysts,1
 13-1121.00,"Meeting, Convention, and Event Planners",0
@@ -83,14 +83,14 @@ onetsoccode,title,teleworkable
 13-1161.00,Market Research Analysts and Marketing Specialists,1
 13-1199.01,Energy Auditors,0
 13-1199.02,Security Management Specialists,1
-13-1199.03,Customs Brokers,0
+13-1199.03,Customs Brokers,1
 13-1199.04,Business Continuity Planners,1
 13-1199.05,Sustainability Specialists,1
 13-1199.06,Online Merchants,1
 13-2011.01,Accountants,1
 13-2011.02,Auditors,1
 13-2021.01,Assessors,1
-13-2021.02,"Appraisers, Real Estate",0
+13-2021.02,"Appraisers, Real Estate",1
 13-2031.00,Budget Analysts,1
 13-2041.00,Credit Analysts,1
 13-2051.00,Financial Analysts,1
@@ -98,12 +98,12 @@ onetsoccode,title,teleworkable
 13-2053.00,Insurance Underwriters,1
 13-2061.00,Financial Examiners,1
 13-2071.00,Credit Counselors,1
-13-2071.01,Loan Counselors,0
+13-2071.01,Loan Counselors,1
 13-2072.00,Loan Officers,0
 13-2081.00,"Tax Examiners and Collectors, and Revenue Agents",0
 13-2082.00,Tax Preparers,0
 13-2099.01,Financial Quantitative Analysts,1
-13-2099.02,Risk Management Specialists,0
+13-2099.02,Risk Management Specialists,1
 13-2099.04,"Fraud Examiners, Investigators and Analysts",1
 15-1111.00,Computer and Information Research Scientists,1
 15-1121.00,Computer Systems Analysts,1
@@ -115,44 +115,44 @@ onetsoccode,title,teleworkable
 15-1134.00,Web Developers,1
 15-1141.00,Database Administrators,1
 15-1142.00,Network and Computer Systems Administrators,1
-15-1143.00,Computer Network Architects,0
+15-1143.00,Computer Network Architects,1
 15-1143.01,Telecommunications Engineering Specialists,1
 15-1151.00,Computer User Support Specialists,1
 15-1152.00,Computer Network Support Specialists,1
 15-1199.01,Software Quality Assurance Engineers and Testers,1
 15-1199.02,Computer Systems Engineers/Architects,1
-15-1199.03,Web Administrators,0
+15-1199.03,Web Administrators,1
 15-1199.04,Geospatial Information Scientists and Technologists,1
-15-1199.05,Geographic Information Systems Technicians,0
+15-1199.05,Geographic Information Systems Technicians,1
 15-1199.06,Database Architects,1
 15-1199.07,Data Warehousing Specialists,1
 15-1199.08,Business Intelligence Analysts,1
-15-1199.09,Information Technology Project Managers,0
-15-1199.10,Search Marketing Strategists,0
-15-1199.11,Video Game Designers,0
+15-1199.09,Information Technology Project Managers,1
+15-1199.10,Search Marketing Strategists,1
+15-1199.11,Video Game Designers,1
 15-1199.12,Document Management Specialists,1
 15-2011.00,Actuaries,1
 15-2021.00,Mathematicians,1
 15-2031.00,Operations Research Analysts,1
 15-2041.00,Statisticians,1
 15-2041.01,Biostatisticians,1
-15-2041.02,Clinical Data Managers,0
+15-2041.02,Clinical Data Managers,1
 15-2091.00,Mathematical Technicians,1
 17-1011.00,"Architects, Except Landscape and Naval",1
 17-1012.00,Landscape Architects,1
 17-1021.00,Cartographers and Photogrammetrists,1
 17-1022.00,Surveyors,0
-17-1022.01,Geodetic Surveyors,0
+17-1022.01,Geodetic Surveyors,1
 17-2011.00,Aerospace Engineers,1
 17-2021.00,Agricultural Engineers,0
 17-2031.00,Biomedical Engineers,1
 17-2041.00,Chemical Engineers,0
 17-2051.00,Civil Engineers,1
-17-2051.01,Transportation Engineers,0
+17-2051.01,Transportation Engineers,1
 17-2061.00,Computer Hardware Engineers,1
 17-2071.00,Electrical Engineers,1
 17-2072.00,"Electronics Engineers, Except Computer",1
-17-2072.01,Radio Frequency Identification Device Specialists,0
+17-2072.01,Radio Frequency Identification Device Specialists,1
 17-2081.00,Environmental Engineers,1
 17-2081.01,Water/Wastewater Engineers,1
 17-2111.01,Industrial Safety and Health Engineers,0
@@ -173,15 +173,15 @@ onetsoccode,title,teleworkable
 17-2199.02,Validation Engineers,0
 17-2199.03,Energy Engineers,0
 17-2199.04,Manufacturing Engineers,0
-17-2199.05,Mechatronics Engineers,0
+17-2199.05,Mechatronics Engineers,1
 17-2199.06,Microsystems Engineers,1
 17-2199.07,Photonics Engineers,1
 17-2199.08,Robotics Engineers,0
 17-2199.09,Nanosystems Engineers,0
 17-2199.10,Wind Energy Engineers,1
-17-2199.11,Solar Energy Systems Engineers,0
+17-2199.11,Solar Energy Systems Engineers,1
 17-3011.01,Architectural Drafters,1
-17-3011.02,Civil Drafters,0
+17-3011.02,Civil Drafters,1
 17-3012.01,Electronic Drafters,1
 17-3012.02,Electrical Drafters,1
 17-3013.00,Mechanical Drafters,1
@@ -218,7 +218,7 @@ onetsoccode,title,teleworkable
 19-1029.01,Bioinformatics Scientists,1
 19-1029.02,Molecular and Cellular Biologists,0
 19-1029.03,Geneticists,1
-19-1031.01,Soil and Water Conservationists,0
+19-1031.01,Soil and Water Conservationists,1
 19-1031.02,Range Managers,0
 19-1031.03,Park Naturalists,0
 19-1032.00,Foresters,0
@@ -226,12 +226,12 @@ onetsoccode,title,teleworkable
 19-1042.00,"Medical Scientists, Except Epidemiologists",1
 19-2011.00,Astronomers,1
 19-2012.00,Physicists,1
-19-2021.00,Atmospheric and Space Scientists,0
+19-2021.00,Atmospheric and Space Scientists,1
 19-2031.00,Chemists,0
 19-2032.00,Materials Scientists,0
 19-2041.00,"Environmental Scientists and Specialists, Including Health",1
 19-2041.01,Climate Change Analysts,1
-19-2041.02,Environmental Restoration Planners,0
+19-2041.02,Environmental Restoration Planners,1
 19-2041.03,Industrial Ecologists,1
 19-2042.00,"Geoscientists, Except Hydrologists and Geographers",1
 19-2043.00,Hydrologists,1
@@ -242,7 +242,7 @@ onetsoccode,title,teleworkable
 19-3031.01,School Psychologists,1
 19-3031.02,Clinical Psychologists,1
 19-3031.03,Counseling Psychologists,1
-19-3032.00,Industrial-Organizational Psychologists,0
+19-3032.00,Industrial-Organizational Psychologists,1
 19-3039.01,Neuropsychologists and Clinical Neuropsychologists,1
 19-3041.00,Sociologists,1
 19-3051.00,Urban and Regional Planners,0
@@ -295,7 +295,7 @@ onetsoccode,title,teleworkable
 25-1022.00,"Mathematical Science Teachers, Postsecondary",1
 25-1031.00,"Architecture Teachers, Postsecondary",1
 25-1032.00,"Engineering Teachers, Postsecondary",1
-25-1041.00,"Agricultural Sciences Teachers, Postsecondary",0
+25-1041.00,"Agricultural Sciences Teachers, Postsecondary",1
 25-1042.00,"Biological Science Teachers, Postsecondary",1
 25-1043.00,"Forestry and Conservation Science Teachers, Postsecondary",1
 25-1051.00,"Atmospheric, Earth, Marine, and Space Sciences Teachers, Postsecondary",1
@@ -325,12 +325,12 @@ onetsoccode,title,teleworkable
 25-1191.00,Graduate Teaching Assistants,1
 25-1192.00,"Home Economics Teachers, Postsecondary",1
 25-1193.00,"Recreation and Fitness Studies Teachers, Postsecondary",1
-25-1194.00,"Vocational Education Teachers, Postsecondary",0
-25-2011.00,"Preschool Teachers, Except Special Education",0
+25-1194.00,"Vocational Education Teachers, Postsecondary",1
+25-2011.00,"Preschool Teachers, Except Special Education",1
 25-2012.00,"Kindergarten Teachers, Except Special Education",1
 25-2021.00,"Elementary School Teachers, Except Special Education",1
-25-2022.00,"Middle School Teachers, Except Special and Career/Technical Education",0
-25-2023.00,"Career/Technical Education Teachers, Middle School",0
+25-2022.00,"Middle School Teachers, Except Special and Career/Technical Education",1
+25-2023.00,"Career/Technical Education Teachers, Middle School",1
 25-2031.00,"Secondary School Teachers, Except Special and Career/Technical Education",1
 25-2032.00,"Career/Technical Education Teachers, Secondary School",1
 25-2051.00,"Special Education Teachers, Preschool",1
@@ -344,11 +344,11 @@ onetsoccode,title,teleworkable
 25-4011.00,Archivists,1
 25-4012.00,Curators,1
 25-4013.00,Museum Technicians and Conservators,0
-25-4021.00,Librarians,0
+25-4021.00,Librarians,1
 25-4031.00,Library Technicians,1
 25-9011.00,Audio-Visual and Multimedia Collections Specialists,1
 25-9021.00,Farm and Home Management Advisors,0
-25-9031.00,Instructional Coordinators,0
+25-9031.00,Instructional Coordinators,1
 25-9031.01,Instructional Designers and Technologists,1
 25-9041.00,Teacher Assistants,1
 27-1011.00,Art Directors,1
@@ -356,7 +356,7 @@ onetsoccode,title,teleworkable
 27-1013.00,"Fine Artists, Including Painters, Sculptors, and Illustrators",1
 27-1014.00,Multimedia Artists and Animators,1
 27-1021.00,Commercial and Industrial Designers,1
-27-1022.00,Fashion Designers,0
+27-1022.00,Fashion Designers,1
 27-1023.00,Floral Designers,1
 27-1024.00,Graphic Designers,1
 27-1025.00,Interior Designers,1
@@ -380,7 +380,7 @@ onetsoccode,title,teleworkable
 27-3011.00,Radio and Television Announcers,0
 27-3012.00,Public Address System and Other Announcers,1
 27-3021.00,Broadcast News Analysts,0
-27-3022.00,Reporters and Correspondents,0
+27-3022.00,Reporters and Correspondents,1
 27-3031.00,Public Relations Specialists,1
 27-3041.00,Editors,1
 27-3042.00,Technical Writers,1
@@ -389,7 +389,7 @@ onetsoccode,title,teleworkable
 27-3091.00,Interpreters and Translators,0
 27-4011.00,Audio and Video Equipment Technicians,1
 27-4012.00,Broadcast Technicians,1
-27-4013.00,Radio Operators,0
+27-4013.00,Radio Operators,1
 27-4014.00,Sound Engineering Technicians,1
 27-4021.00,Photographers,1
 27-4031.00,"Camera Operators, Television, Video, and Motion Picture",0
@@ -429,7 +429,7 @@ onetsoccode,title,teleworkable
 29-1123.00,Physical Therapists,0
 29-1124.00,Radiation Therapists,0
 29-1125.00,Recreational Therapists,0
-29-1125.01,Art Therapists,0
+29-1125.01,Art Therapists,1
 29-1125.02,Music Therapists,1
 29-1126.00,Respiratory Therapists,0
 29-1127.00,Speech-Language Pathologists,1
@@ -521,7 +521,7 @@ onetsoccode,title,teleworkable
 33-3052.00,Transit and Railroad Police,0
 33-9011.00,Animal Control Workers,0
 33-9021.00,Private Detectives and Investigators,1
-33-9031.00,Gaming Surveillance Officers and Gaming Investigators,0
+33-9031.00,Gaming Surveillance Officers and Gaming Investigators,1
 33-9032.00,Security Guards,0
 33-9091.00,Crossing Guards,0
 33-9092.00,"Lifeguards, Ski Patrol, and Other Recreational Protective Service Workers",0
@@ -578,7 +578,7 @@ onetsoccode,title,teleworkable
 39-6012.00,Concierges,0
 39-7011.00,Tour Guides and Escorts,0
 39-7012.00,Travel Guides,0
-39-9011.00,Childcare Workers,0
+39-9011.00,Childcare Workers,1
 39-9011.01,Nannies,1
 39-9021.00,Personal Care Aides,0
 39-9031.00,Fitness Trainers and Aerobics Instructors,0
@@ -609,7 +609,7 @@ onetsoccode,title,teleworkable
 41-9041.00,Telemarketers,1
 41-9091.00,"Door-To-Door Sales Workers, News and Street Vendors, and Related Workers",0
 43-1011.00,First-Line Supervisors of Office and Administrative Support Workers,1
-43-2011.00,"Switchboard Operators, Including Answering Service",0
+43-2011.00,"Switchboard Operators, Including Answering Service",1
 43-2021.00,Telephone Operators,0
 43-3011.00,Bill and Account Collectors,1
 43-3021.01,Statement Clerks,0
@@ -617,7 +617,7 @@ onetsoccode,title,teleworkable
 43-3031.00,"Bookkeeping, Accounting, and Auditing Clerks",1
 43-3041.00,Gaming Cage Workers,0
 43-3051.00,Payroll and Timekeeping Clerks,1
-43-3061.00,Procurement Clerks,0
+43-3061.00,Procurement Clerks,1
 43-3071.00,Tellers,0
 43-4011.00,Brokerage Clerks,1
 43-4021.00,Correspondence Clerks,1
@@ -668,7 +668,7 @@ onetsoccode,title,teleworkable
 43-9051.00,"Mail Clerks and Mail Machine Operators, Except Postal Service",1
 43-9061.00,"Office Clerks, General",1
 43-9071.00,"Office Machine Operators, Except Computer",1
-43-9081.00,Proofreaders and Copy Markers,0
+43-9081.00,Proofreaders and Copy Markers,1
 43-9111.00,Statistical Assistants,1
 43-9111.01,Bioinformatics Technicians,1
 45-1011.05,First-Line Supervisors of Logging Workers,0
@@ -861,7 +861,7 @@ onetsoccode,title,teleworkable
 51-6063.00,"Textile Knitting and Weaving Machine Setters, Operators, and Tenders",0
 51-6064.00,"Textile Winding, Twisting, and Drawing Out Machine Setters, Operators, and Tenders",0
 51-6091.00,"Extruding and Forming Machine Setters, Operators, and Tenders, Synthetic and Glass Fibers",0
-51-6092.00,Fabric and Apparel Patternmakers,0
+51-6092.00,Fabric and Apparel Patternmakers,1
 51-6093.00,Upholsterers,0
 51-7011.00,Cabinetmakers and Bench Carpenters,0
 51-7021.00,Furniture Finishers,0

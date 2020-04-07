@@ -19,5 +19,5 @@ $(FOLDERS):
 #Outputs recipes
 ../output/headline_onet.tex ../output/headline_manual.tex: headline_numbers.do ../input/national_M2018_dl.xlsx ../input/onet_teleworkable_blscodes.dta ../input/Teleworkable_BNJDopinion.dta | ../output
 	stata-se -e $<
-../output/NAICS_telework_top5bottom5_table.tex ../output/NAICS_workfromhome.csv: naics.do ../input/natsector_M2018_dl.xlsx ../input/Teleworkable_BNJDopinion.dta | ../output
+../output/NAICS_telework_top5bottom5_table.tex ../output/NAICS_workfromhome.csv: naics.do ../input/natsector_M2018_dl.xlsx ../input/onet_teleworkable_blscodes.dta ../input/Teleworkable_BNJDopinion.dta | ../output
 	stata-se -e $<

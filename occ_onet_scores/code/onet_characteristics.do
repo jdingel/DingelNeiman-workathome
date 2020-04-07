@@ -37,7 +37,7 @@ inlist(elementid,"4.C.2.b.1.b","4.C.2.b.1.d","4.C.2.b.1.e","4.C.2.b.1.f","4.C.2.
 inlist(elementid,"4.C.2.c.1.e","4.C.2.c.1.f","4.C.2.d.1.d","4.C.2.d.1.e","4.C.2.d.1.f","4.C.2.d.1.h","4.C.2.d.1.i","4.C.2.e.1.d")==1 | ///
 inlist(elementid,"4.C.2.e.1.e","4.C.2.d.1.a","4.C.2.d.1.b")==1
 
-keep if scaleid=="CX" | inlist(elementid,"4.C.2.d.1.g","4.C.2.a.1.c","4.C.2.a.1.d")
+keep if scaleid=="CX"
 
 bys onetsoccode: egen byte sitting_continually = max(elementid=="4.C.2.d.1.a" & inrange(datavalue,4.5,5.0)==1)
 label variable sitting_continually "Average respondent says they are sitting almost continually"
