@@ -9,6 +9,7 @@ If you simply want to download our results without running any replication code,
 - [industry-level results](national_measures/output/NAICS_workfromhome.csv)
 - [metropolitan-level results](MSA_measures/output/MSA_workfromhome.csv)
 - [occupation-level results](occ_onet_scores/output/occupations_workathome.csv)
+- [country-level results](country_correlates/output/country_workathome.csv)
 
 ## Code organization
 
