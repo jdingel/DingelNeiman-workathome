@@ -40,6 +40,6 @@ all: 	../output/MSA_M2018_dl.xlsx ../output/national_M2018_dl.xlsx \
 	curl https://www.onetcenter.org/dl_files/database/db_24_2_text/Work%20Activities.txt > $@
 #Crosswalks
 ../output/oes_2019_hybrid_structure.xlsx: | ../output
-	curl https://www.bls.gov/oes/$(@F) > $@
+	curl https://www.bls.gov/oes/oes_2019_hybrid_structure.xlsx > $@
 ../output/2010_to_SOC_Crosswalk.xlsx: | ../output
 	curl https://www.onetcenter.org/taxonomy/2010/soc/2010_to_SOC_Crosswalk.xlsx?fmt=xlsx  > $@

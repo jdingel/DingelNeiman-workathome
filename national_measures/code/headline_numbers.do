@@ -39,7 +39,7 @@ quietly summarize teleworkable_emp
 local tele_emp = string(100*`r(mean)',"%3.0f")
 quietly summarize emp_denom
 local total_teachers = string(`r(mean)',"%10.0fc")
-shell echo -n "Our scheme classifies `tele_emp' percent of `total_teachers' teachers as able to work from home." > ../output/teachers_caveat_subjective.tex
+shell echo -n "Our scheme classifies `tele_emp' percent of `total_teachers' teachers as able to work from home." > ../output/teachers_caveat_manual.tex
 
 
 //O*NET survey-derived coding of teleworkability
@@ -92,4 +92,4 @@ local tele_emp = string(100*`r(mean)',"%3.0f")
 quietly summarize emp_denom
 local total_teachers = string(`r(mean)'/1000000,"%3.1fc")
 shell echo -n "Our scheme classifies `tele_emp' percent of `total_teachers' teachers as able to work from home." > ../output/teachers_caveat_onet.tex
-shell echo -n "our classification codes `tele_emp' percent of `total_teachers' million teachers as able to work from home,%" > ../output/teachers_caveat_fragment_onet.tex
+shell echo -n "our classification codes `tele_emp' percent of the `total_teachers' million teachers in the U.S. as able to work from home,%" > ../output/teachers_caveat_fragment_onet.tex

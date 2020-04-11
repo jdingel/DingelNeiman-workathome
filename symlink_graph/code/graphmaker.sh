@@ -3,12 +3,13 @@
 
 echo -e 'digraph G {' > ../output/graph.txt
 
-find ../.. -type l -ls | awk '{print $13 " -> " $11}' | #List symbolic links
-grep -v '^\.\./\(input\|output\)' | #Drop within-task links
-sed 's/^\.\.\/\.\.\/\([a-zA-Z0-9_\-\/]*\)\/output\/.*\.\.\/\.\.\/\([a-zA-Z0-9_\-]*\)\/input\/.*$/\1 -> \2/' | #Retain only task names; drop filenames
-sed 's/\/\(input\|output\)\/[a-zA-Z0-9_\.]*//g' | #Retain only task names; drop filenames
-sed 's/\.\.\///g' | #Drop relative paths
-sed 's/\//_/g' | sed 's/cac\-/cac_/g' | #Eliminate "/" and "-" from node names to please graphviz
+find ../../*/code -name "Makefile" | xargs grep 'ln' |
+grep -v 'ln \-s \$< \$@' | # Drop recipes that don't show target (these ought to be handled differently) #This affects Brazil_censusdata/code/Makefile
+sed 's/\.\.\/\.\.\///g' | #Drop leading relative path ../../ from start of line
+sed 's/if \[.*\] ; then ln \-s//' | sed 's/; else exit 1; fi//'    | #drop if statement components
+sed 's/\/code\/Makefile\:/ \->/' | sed 's/\/output\/.*//'  | sed 's/\/code\/.*//' | #drop within-task directories
+sed 's/ln \-s//' | #Drop any straggling symbolic link commands
+sed 's/[[:space:]]*//g' | awk -F'->' '{ print $2 "->" $1}' | #sed 's/\->/ \-> /' | #Drop all spaces; put spaces around symbolic link arrow
 sort | uniq >> ../output/graph.txt
 echo '}' >> ../output/graph.txt
 

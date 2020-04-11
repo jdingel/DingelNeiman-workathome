@@ -1,5 +1,5 @@
 #Recipes
-all: ../output/MSA_range.tex ../output/MSA_telework_top5bottom5_table.tex ../output/MSA_teleworkable_emp.png ../output/MSA_teleworkable_wage.png
+all: ../output/MSA_range.tex ../output/MSA_telework_top5bottom5_table.tex ../output/MSA_teleworkable_emp.eps ../output/MSA_teleworkable_wage.eps
 #Folders recipes
 ../input ../output:
 	mkdir $@
@@ -9,5 +9,5 @@ all: ../output/MSA_range.tex ../output/MSA_telework_top5bottom5_table.tex ../out
 #Outputs recipes
 ../output/MSA_range.tex ../output/MSA_telework_top5bottom5_table.tex: table.do ../input/MSA_2018_teleworkable_manual.dta ../input/MSA_2018_teleworkable_onet.dta | ../output
 	stata-se -e $<
-../output/MSA_teleworkable_emp.png ../output/MSA_teleworkable_wage.png: maps.do ../input/MSA_2018_teleworkable_manual.dta ../input/MSA_2018_teleworkable_onet.dta | ../output
+../output/MSA_teleworkable_emp.eps ../output/MSA_teleworkable_wage.eps: maps.do ../input/MSA_2018_teleworkable_manual.dta ../input/MSA_2018_teleworkable_onet.dta | ../output
 	stata-se -e $<

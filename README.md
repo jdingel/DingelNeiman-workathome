@@ -1,4 +1,7 @@
 This repository contains the code underlying the note "[How Many Jobs Can be Done at Home?](DingelNeiman-workathome.pdf)" by Jonathan I. Dingel and Brent Neiman.
+This is a complete replication package that produces all results from scratch,
+beginning with [code](downloaddata/code/Makefile) that downloads all the required data from [bls.gov](https://www.bls.gov/) and [onetcenter.org](https://www.onetcenter.org/).
+
 
 ## Results
 
@@ -42,3 +45,8 @@ Nonetheless, it is also possible to produce the results task-by-task in the orde
 If all upstream tasks have been completed, you can complete a task by navigating to the task's `code` directory and typing `make`.
 - An internet connection is required so that the `downloaddata` task can download data.
 - If you want to create your own manual classification, edit the file [Teleworkable_BNJDopinion.csv](occ_manual_scores/input/Teleworkable_BNJDopinion.csv) before running the code.
+
+## Acknowledgments
+
+Thanks to Menglu Xu for research assistance.
+Thanks to [Megan Fasules](https://github.com/mfasules) for spotting a bug in our initial code.
