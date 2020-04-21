@@ -47,6 +47,12 @@ If all upstream tasks have been completed, you can complete a task by navigating
 - An internet connection is required so that the `downloaddata` task can download data.
 - If you want to create your own manual classification, edit the file [Teleworkable_BNJDopinion.csv](occ_manual_scores/input/Teleworkable_BNJDopinion.csv) before running the code.
 
+### Windows users
+
+You likely should install [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/faq).
+Alternatively, my colleague [says that](https://github.com/rlsweeney/public_cs_texas/blob/master/README.md) "Windows users can install [chocolatey](https://chocolatey.org/install), and then type `choco install make` on the command line."
+If you aren't able to use `make`, you can replicate the paper by following [this list](Windows_checklist.txt).
+
 ## Acknowledgments
 
 Thanks to Menglu Xu for research assistance.
