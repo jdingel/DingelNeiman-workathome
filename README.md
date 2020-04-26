@@ -57,3 +57,7 @@ If you aren't able to use `make`, you can replicate the paper by following [this
 
 Thanks to Menglu Xu for research assistance.
 Thanks to [Megan Fasules](https://github.com/mfasules) for spotting a bug in our initial code.
+
+## Related work
+- [James Stratton](https://opportunityinsights.org/team/james-stratton/) applied our measures to Australian occupational codes. See his [replication package](https://github.com/JamesStratton/Aus-workathome) for "How Many How Many Australians Can Work From Home? An Application of Dingel and Neiman (2020) to Australian Occupation Data".
+- [Ole Agersnap](https://www.nber.org/people/agersnap) wrote code to produce state-level measures. His code is available in [state_measures](state_measures).

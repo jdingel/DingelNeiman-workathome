@@ -1,0 +1,16 @@
+#Makefile to download data for Ole Agersnap's "state_measures" task
+#This code is not necessary to produce any results in Dingel & Neiman (2020)
+
+#Recipes
+all: ../output/state_M2018_dl.xlsx
+
+../output:
+	mkdir $@
+
+#Occupational Employment Statistics
+../output/oesm18st.zip: | ../output
+	curl https://www.bls.gov/oes/special.requests/oesm18st.zip > $@
+../output/state_M2018_dl.xlsx: | ../output/oesm18st.zip
+	unzip ../output/oesm18st.zip -d ../output
+	mv -v ../output/oesm18st/* ../output/
+	rm -r ../output/oesm18st
