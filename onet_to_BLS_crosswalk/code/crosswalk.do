@@ -33,3 +33,4 @@ collapse (mean) telew (firstnm) OES_TITLE, by(OES_2018)
 clonevar OCC_CODE = OES_2018
 
 save "../output/onet_teleworkable_blscodes.dta", replace
+export delimited OCC_CODE OES_TITLE telew using "../output/onet_teleworkable_blscodes.csv", replace
