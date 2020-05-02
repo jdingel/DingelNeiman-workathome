@@ -1,0 +1,89 @@
+NAICS,NAICS_TITLE,teleworkable_emp,teleworkable_wage,teleworkable_manual_emp,teleworkable_manual_wage
+113,Forestry and Logging,.11621563,.11694129,.1512716,.15908691
+115,Support Activities for Agriculture and Forestry,.07096149,.13203268,.048828539,.10165473
+211,Oil and Gas Extraction,.53095901,.6567387,.43069643,.54048651
+212,Mining (except Oil and Gas),.11866288,.15359055,.099561699,.14262912
+213,Support Activities for Mining,.21026278,.3063722,.16359439,.24628125
+221,Utilities,.3699975,.40976703,.36985531,.41298309
+236,Construction of Buildings,.24474956,.29015684,.20459197,.26638481
+237,Heavy and Civil Engineering Construction,.15450422,.2021292,.12478104,.18222067
+238,Specialty Trade Contractors,.17196091,.2013973,.1270417,.16239636
+311,Food Manufacturing,.10082075,.18615155,.096251547,.181541
+312,Beverage and Tobacco Product Manufacturing,.18258549,.28648967,.17050725,.26229393
+313,Textile Mills,.11584711,.19187674,.11566566,.19993067
+314,Textile Product Mills,.18937546,.29841954,.16226317,.26523834
+315,Apparel Manufacturing,.20842013,.38778263,.17179963,.3365896
+316,Leather and Allied Product Manufacturing,.17214595,.289635,.16520788,.26363772
+321,Wood Product Manufacturing,.13076213,.2113356,.10782189,.18415159
+322,Paper Manufacturing,.15957078,.24342248,.14720249,.23225239
+323,Printing and Related Support Activities,.3550531,.45612377,.2744396,.37024501
+324,Petroleum and Coal Products Manufacturing,.21239342,.28124642,.2137704,.2802476
+325,Chemical Manufacturing,.27822965,.39916274,.2881074,.41314435
+326,Plastics and Rubber Products Manufacturing,.15134722,.25517002,.15387207,.26462933
+327,Nonmetallic Mineral Product Manufacturing,.16973431,.24461919,.14079817,.21575025
+331,Primary Metal Manufacturing,.12809217,.20472686,.1450136,.23102
+332,Fabricated Metal Product Manufacturing,.18565737,.27902955,.17467324,.27362719
+333,Machinery Manufacturing,.26123902,.3801187,.29196009,.43165445
+334,Computer and Electronic Product Manufacturing,.50609058,.67035425,.57492107,.7381528
+335,"Electrical Equipment, Appliance, and Component Manufacturing",.27664644,.4257068,.3083216,.47026804
+336,Transportation Equipment Manufacturing,.20939927,.33331767,.31905574,.45953196
+337,Furniture and Related Product Manufacturing,.17319366,.27063826,.16015071,.25709251
+339,Miscellaneous Manufacturing,.31195652,.44688228,.28341195,.43179661
+423,"Merchant Wholesalers, Durable Goods",.53548193,.67719042,.43625382,.56826174
+424,"Merchant Wholesalers, Nondurable Goods",.44684008,.60494244,.35430357,.48952693
+425,Wholesale Electronic Markets and Agents and Brokers,.70101935,.82678145,.57141465,.67748004
+441,Motor Vehicle and Parts Dealers,.17855936,.26060307,.15286486,.23971175
+442,Furniture and Home Furnishings Stores,.18650955,.26441711,.15637025,.22966363
+443,Electronics and Appliance Stores,.34583145,.44723415,.24155311,.30517751
+444,Building Material and Garden Equipment and Supplies Dealers,.18421249,.25919697,.15268731,.21194375
+445,Food and Beverage Stores,.10863365,.14925313,.07018327,.10318287
+446,Health and Personal Care Stores,.10296521,.12649144,.083375931,.10786108
+447,Gasoline Stations,.0468226,.091130622,.038398895,.081049487
+448,Clothing and Clothing Accessories Stores,.065339699,.11063605,.057775185,.099556677
+451,"Sporting Goods, Hobby, Musical Instrument, and Book Stores",.11913777,.19002332,.10446826,.17194106
+452,General Merchandise Stores,.080677509,.11121024,.065229185,.097288258
+453,Miscellaneous Store Retailers,.17300394,.25743195,.14483885,.22343203
+454,Nonstore Retailers,.50372028,.61027461,.44717655,.5509553
+481,Air Transportation,.14863922,.32340169,.29925358,.54086328
+482,Rail Transportation,.17863056,.22388449,.14997372,.18755899
+483,Water Transportation,.20177445,.24027646,.18335454,.21162163
+484,Truck Transportation,.18399465,.22095172,.11755802,.1455588
+485,Transit and Ground Passenger Transportation,.17727181,.21219847,.081438854,.11389305
+486,Pipeline Transportation,.29716063,.38353354,.27008179,.34664178
+487,Scenic and Sightseeing Transportation,.16917387,.24233125,.19112654,.23931298
+488,Support Activities for Transportation,.37003624,.45561537,.31814945,.38535985
+491,Postal Service (federal government),.082602106,.11354257,.043834168,.060760371
+492,Couriers and Messengers,.16096172,.19808941,.071091183,.099077307
+493,Warehousing and Storage,.16678795,.24769334,.098763324,.15469261
+511,Publishing Industries (except Internet),.85813659,.91996396,.80557096,.87800694
+512,Motion Picture and Sound Recording Industries,.54986179,.63756686,.24313001,.32732812
+515,Broadcasting (except Internet),.59754372,.63646305,.45330223,.51048481
+517,Telecommunications,.57388711,.65412086,.55454725,.6231606
+518,"Data Processing, Hosting, and Related Services",.92968369,.95872313,.88043618,.92567509
+519,Other Information Services,.87793314,.93095422,.79197663,.87358451
+521,Monetary Authorities-Central Bank,.89410585,.94631076,.84487665,.91408741
+522,Credit Intermediation and Related Activities,.58399868,.71105897,.64114791,.76586372
+523,"Securities, Commodity Contracts, and Other Financial Investments and Related Activities",.95443225,.97682196,.77666271,.82648337
+524,Insurance Carriers and Related Activities,.88573444,.91463536,.7943399,.80768943
+525,"Funds, Trusts, and Other Financial Vehicles",.9140749,.96152169,.7569378,.8398723
+531,Real Estate,.45236972,.56418341,.33381963,.43570665
+532,Rental and Leasing Services,.28935915,.41545719,.22713429,.33389962
+533,Lessors of Nonfinancial Intangible Assets (except Copyrighted Works),.90588409,.94476509,.80808198,.86888188
+541,"Professional, Scientific, and Technical Services",.80269659,.86348528,.75884557,.82105213
+551,Management of Companies and Enterprises,.79177946,.85771215,.75478303,.82206088
+561,Administrative and Support Services,.30971128,.4379119,.31812826,.43241164
+562,Waste Management and Remediation Services,.22637221,.30332896,.17432956,.24912044
+611,Educational Services,.82645506,.71396339,.70948505,.61174703
+621,Ambulatory Health Care Services,.25692049,.2310808,.21026362,.17793994
+622,Hospitals,.21102381,.20856754,.17981653,.16848804
+623,Nursing and Residential Care Facilities,.15695499,.20845784,.099696793,.14847462
+624,Social Assistance,.39221948,.42269984,.22281004,.28379354
+711,"Performing Arts, Spectator Sports, and Related Industries",.48202783,.5336808,.28233573,.40498084
+712,"Museums, Historical Sites, and Similar Institutions",.41305515,.55114585,.3284733,.45625693
+713,"Amusement, Gambling, and Recreation Industries",.233767,.26640487,.11198141,.18106075
+721,Accommodation,.13428272,.19643217,.077293046,.14067154
+722,Food Services and Drinking Places,.017568879,.038011037,.018683191,.042625383
+811,Repair and Maintenance,.20093061,.25485313,.14531569,.19899565
+812,Personal and Laundry Services,.11612594,.17507678,.089535631,.13752083
+813,"Religious, Grantmaking, Civic, Professional, and Similar Organizations",.63149911,.7350716,.51730901,.66696531
+999,"Federal, State, and Local Government, excluding state and local schools and hospitals and the U.S. Postal Service (OES Designation)",.41475701,.46738413,.3604888,.4248057
