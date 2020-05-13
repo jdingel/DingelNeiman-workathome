@@ -6,7 +6,7 @@ beginning with [code](downloaddata/code/Makefile) that downloads all the require
 ## Results
 
 If you simply want to download our results without running any replication code, you can grab the following CSV files:
-- [industry-level results](national_measures/output/NAICS_workfromhome.csv)
+- industry-level results by [2-digit NAICS](national_measures/output/NAICS_workfromhome.csv) and [3-digit NAICS](national_measures/output/NAICS3_workfromhome.csv)
 - [metropolitan-level results](MSA_measures/output/MSA_workfromhome.csv)
 - [occupation-level results](occ_onet_scores/output/occupations_workathome.csv)
 - [country-level results](country_correlates/output/country_workathome.csv)
