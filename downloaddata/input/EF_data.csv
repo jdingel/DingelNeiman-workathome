@@ -1,0 +1,35 @@
+"'Started to work from home as a result of the situation' by country"
+"The data show 'Yes' for respondents in the EU27 when asked:  Have you started to work from home as a result of the COVID-19 situation?  Slovenia is excluded from the data for this question because of a translation issue."
+
+"Country","Yes","Total"
+"Ireland",43.4,43.4
+"Spain",30.2,30.2
+"France",37.2,37.2
+"Belgium",53.4,53.4
+"Germany",36.9,36.9
+"Estonia",36.1,36.1
+"Italy",40.8,40.8
+"Poland",31.6,31.6
+"Portugal",38.3,38.3
+"Netherlands*",53.9,53.9
+"Sweden*",41.8,41.8
+"Malta*",35.4,35.4
+"Romania",18.4,18.4
+"Austria",41.5,41.5
+"Lithuania",36.8,36.8
+"Slovakia",30.9,30.9
+"Greece",26,26
+"Luxembourg",56.8,56.8
+"Latvia*",31.6,31.6
+"Bulgaria",28.8,28.8
+"Cyprus*",33.2,33.2
+"Hungary",28.1,28.1
+"Denmark",46.7,46.7
+"Finland",59,59
+"Czechia",36.5,36.5
+"Croatia",27.8,27.8
+"Total (EU27)",36.8,36.8
+
+" Low reliability (*):  Cyprus, Latvia, Malta, Netherlands and Sweden. "
+
+"Cite as: Eurofound (2020), Living, working and COVID-19 dataset, Dublin, http://eurofound.link/covid19data"

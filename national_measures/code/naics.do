@@ -104,7 +104,15 @@ export delimited using "../output/NAICS_workfromhome.csv", replace
 
 //Report results in statements and tables
 use `tf_forcsv_baseline', clear
+gen str tele_emp_str = string(teleworkable_emp,"%3.2f")
+gen str tele_wage_str = string(teleworkable_wage,"%3.2f")
+gen str NAICS_TITLE_short = subinstr(NAICS_TITLE,", excluding state and local schools and hospitals and the U.S. Postal Service (OES Designation)","",1)
+gsort -teleworkable_emp
 
+listtex NAICS_TITLE_short tele_emp_str tele_wage_str using "../output/NAICS2_table.tex", replace ///
+rstyle(tabular) head("\begin{tabular}{lcc} \toprule" "&&Weighted\\" "& Unweighted & by wage\\" "\midrule") foot("\bottomrule \end{tabular}")
+
+//Top-5 and bottom-5 table
 tempvar tv1 tv2
 egen `tv1' = rank(teleworkable_emp), field
 egen `tv2' = rank(teleworkable_emp), track
@@ -113,8 +121,6 @@ keep if inrange(`tv1',1,5) | inrange(`tv2',1,5)
 gen row = (`tv1')*inrange(`tv1',1,5) + (11-`tv2')*inrange(`tv2',1,5)
 sort row
 list NAICS_TITLE teleworkable_emp teleworkable_wage row
-gen str tele_emp_str = string(teleworkable_emp,"%3.2f")
-gen str tele_wage_str = string(teleworkable_wage,"%3.2f")
 
 
 sort row

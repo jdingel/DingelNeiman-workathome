@@ -111,10 +111,32 @@ use `tf_workcontext', clear
 merge 1:1 onetsoccode using `tf_workactivities', assert(match) nogen
 merge m:1 onetsoccode using `tf_occtitles', assert(using match) keep(match) nogen keepusing(title)
 gen byte teleworkable = (email_lessthanmonthly==0 & outdoors_everyday==0 & violentpeople_atleastweekly==0 & safetyequip_majority == 0 & minorhurt_atleastweekly==0 & physical_activities==0 & handlingobjects==0 & control_machines==0 & operate_equipment==0 & dealwithpublic==0 & repair_mechequip==0 & repair_elecequip==0 & inspect_equip==0 & disease_atleastweekly==0 & walking_majority==0)
-save "../output/onet_teleworkable_detail.dta", replace
-keep onetsoccode title teleworkable n
-save "../output/onet_teleworkable.dta", replace
 
-//Export CSV for distribution
-keep onetsoccode title teleworkable
-export delimited using "../output/occupations_workathome.csv", replace
+//Explore the contribution of each measure to our classification
+gen byte cannotworkfromhome = (email_lessthanmonthly==1|outdoors_everyday==1|violentpeople_atleastweekly==1|safetyequip_majority==1|minorhurt_atleastweekly==1|physical_activities==1|handlingobjects==1|control_machines==1|operate_equipment==1|dealwithpublic==1|repair_mechequip==1|repair_elecequip==1|inspect_equip==1|disease_atleastweekly==1|walking_majority==1)
+foreach var of varlist email_lessthanmonthly outdoors_everyday violentpeople_atleastweekly safetyequip_majority minorhurt_atleastweekly physical_activities handlingobjects control_machines operate_equipment dealwithpublic repair_mechequip repair_elecequip inspect_equip disease_atleastweekly walking_majority {
+	quietly correlate cannotworkfromhome `var'
+	local correlation = string(`r(rho)',"%4.3f")
+	quietly summarize `var'
+	local mean = string(`r(mean)',"%4.3f")
+	display "`var': correlation `correlation', mean `mean'"
+}	
+gen byte cannotworkfromhome_sum = email_lessthanmonthly + outdoors_everyday + violentpeople_atleastweekly + safetyequip_majority + minorhurt_atleastweekly + physical_activities + handlingobjects + control_machines + operate_equipment + dealwithpublic + repair_mechequip + repair_elecequip + inspect_equip + disease_atleastweekly + walking_majority
+foreach var of varlist email_lessthanmonthly outdoors_everyday violentpeople_atleastweekly safetyequip_majority minorhurt_atleastweekly physical_activities handlingobjects control_machines operate_equipment dealwithpublic repair_mechequip repair_elecequip inspect_equip disease_atleastweekly walking_majority {
+	quietly count if `var'==1 & cannotworkfromhome_sum==1
+	display "`var': `r(N)'"
+}	
+
+quietly count if cannotworkfromhome_sum==1
+local obs_singlecondition = `r(N)'
+display "There are `r(N)' observations in which only one survey response causes the occupation to be classified as unable to be performed at home."
+display "For each variable, report its mean value, its correlation with cannotworkfromhome, and the number of cases in which it is the sole condition causing cannotworkfromhome to be true."
+foreach var of varlist violentpeople_atleastweekly repair_elecequip minorhurt_atleastweekly repair_mechequip outdoors_everyday disease_atleastweekly operate_equipment physical_activities handlingobjects control_machines walking_majority email_lessthanmonthly dealwithpublic inspect_equip safetyequip_majority { //Order variables by mean value
+	quietly correlate cannotworkfromhome `var'
+	local correlation = string(`r(rho)',"%4.3f")
+	quietly summarize `var'
+	local mean = string(`r(mean)',"%4.3f")
+	quietly count if `var'==1 & cannotworkfromhome_sum==1
+	local solecondition = `r(N)'
+	display "`var': mean `mean', correlation `correlation', sole condition for `r(N)' of `obs_singlecondition'"
+}	

@@ -1,4 +1,11 @@
 clear all
+
+foreach package in blindschemes {
+    capture which `package'
+    if _rc==111 ssc install `package'
+}
+set scheme plotplainblind
+
 graph set window fontface "Garamond"
 graph set eps fontface "Times"
 
@@ -59,7 +66,13 @@ replace occ_short = "Construction (47)" if soc==47
 replace occ_short = "Food Preparation (35)" if soc==35
 replace occ_short = "Building Cleaning (37)" if soc==37
 keep occ_short teleworkable H_MEDIAN 
+export delimited using "../output/occupation_WFH_wage_dataforplot.csv", replace
 graph twoway scatter H_MEDIAN teleworkable, xsc(r(-0.1 1.1)) xlabel(0(0.25)1, labsize(small)) ylabel(0(15)60, labsize(small)) graphregion(color(white)) ///
 xtitle("Share of jobs that can be done at home") xlabel( , labsize(small))  ytitle("Median hourly wage (USD)") mlabel(occ_short) msym(o) mlabposition(12) mlabsize(vsmall) mlabcolor(black) || ///
 lfit H_MEDIAN teleworkable, legend(off)
 graph export "../output/occupation_WFH_wage_plot.eps", as(eps) replace
+graph twoway scatter H_MEDIAN teleworkable, xsc(r(-0.15 1.15)) xlabel(0(0.25)1, labsize(large)) ylabel(0(15)60, labsize(large)) graphregion(color(white)) ///
+xtitle("Share of jobs that can be done at home", size(large)) ytitle("Median hourly wage (USD)", size(large)) mlabel(occ_short) msym(o) mlabposition(12) mlabsize(small) mlabcolor(black) || ///
+lfit H_MEDIAN teleworkable, legend(off)
+graph export "../output/occupation_WFH_wage_plot_largetext.eps", as(eps) replace
+

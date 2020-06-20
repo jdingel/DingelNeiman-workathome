@@ -58,7 +58,9 @@ keep AREA AREA_NAME teleworkable_emp teleworkable_wage MSA_totalemployment
 duplicates drop
 egen tag = tag(AREA)
 assert tag==1
+drop tag
 save "../output/MSA_2018_teleworkable_onet.dta", replace
+export delimited using "../output/MSA_2018_teleworkable_onet.csv", replace
 
 use AREA AREA_NAME teleworkable* using "../output/MSA_2018_teleworkable_manual.dta", clear
 rename (teleworkable_emp teleworkable_wage) (teleworkable_manual_emp teleworkable_manual_wage )

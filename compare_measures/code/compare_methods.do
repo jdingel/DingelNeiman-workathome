@@ -8,7 +8,7 @@ import excel using "../input/national_M2018_dl.xlsx", clear firstrow
 keep if OCC_GROUP=="broad"
 save `tf_national_soc5', replace
 import excel using "../input/national_M2018_dl.xlsx", clear firstrow
-keep if substr(OCC_CODE,-4,4)=="0000" & substr(OCC_CODE,1,2)!="00"
+keep if substr(OCC_CODE,-4,4)=="0000" & substr(OCC_CODE,1,2)!="00" //equivalent to keep if OCC_GROUP=="major"
 gen soc2 = real(substr(OCC_CODE,1,2))
 keep soc2 OCC_CODE OCC_TITLE 
 compress
@@ -35,8 +35,8 @@ rename Teleworkable Tele_BNJD
 tempfile tf0
 save `tf0'
 use `tf_merged_onet', clear
-gen str soc5 = substr(OCC_CODE,1,6)
 merge m:1 OCC_CODE using `tf_national_soc6', keepusing(OCC_TITLE OCC_GROUP TOT_EMP) assert(master match) keep(match) nogen
+gen str soc5 = substr(OCC_CODE,1,6)
 collapse (mean) teleworkable [w=TOT_EMP], by(soc5)
 merge 1:1 soc5 using `tf0' 
 list if _merge!=3
@@ -55,13 +55,13 @@ gen str tele_bnjd_str = string(Tele_BNJD,"%3.2f")
 gen str teleworkable_str = string(teleworkable,"%3.2f")
 gsort -teleworkable soc2
 listtex soc2 OCC_TITLE teleworkable_str tele_bnjd_str using "../output/soc2_summary.tex", replace ///
-rstyle(tabular) head("\begin{tabular}{llcc} \toprule" "&&O*NET-derived & Manual\\" "\multicolumn{2}{c}{Occupation} & baseline & alternative\\" "\midrule") foot("\bottomrule \end{tabular}")
+rstyle(tabular) head("\begin{tabular}{llcc} \toprule" "&&O*NET-derived & Manual\\" "\multicolumn{2}{c}{Occupation} & baseline & assignment\\" "\midrule") foot("\bottomrule \end{tabular}")
 
 //Report where two methods disagree for 5-digit SOC codes
 use `tf_merged', clear
 keep if (Tele_BNJD==0 & inrange(teleworkable,0.8,.)) | (Tele_BNJD==1 & inrange(teleworkable,0.0,0.2))
 gen str tele_bnjd_str = string(Tele_BNJD,"%2.0f")
 gen str teleworkable_str = string(teleworkable,"%3.2f")
-sort teleworkable Tele_BNJD BroadGroupCode
-listtex BroadGroupCode BroadGroup teleworkable_str tele_bnjd_str using "../output/methods_disagree.tex", replace ///
-rstyle(tabular) head("\begin{tabular}{llcc} \toprule" "&&O*NET-derived & Manual\\" "\multicolumn{2}{c}{Occupation} & baseline & alternative\\" "\midrule") foot("\bottomrule \end{tabular}")
+sort teleworkable Tele_BNJD soc5
+listtex soc5 BroadGroup teleworkable_str tele_bnjd_str using "../output/methods_disagree.tex", replace ///
+rstyle(tabular) head("\begin{tabular}{llcc} \toprule" "&&O*NET-derived & Manual\\" "\multicolumn{2}{c}{Occupation} & baseline & assignment\\" "\midrule") foot("\bottomrule \end{tabular}")

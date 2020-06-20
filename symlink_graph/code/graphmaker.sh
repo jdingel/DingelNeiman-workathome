@@ -12,5 +12,3 @@ sed 's/ln \-s//' | #Drop any straggling symbolic link commands
 sed 's/[[:space:]]*//g' | awk -F'->' '{ print $2 "->" $1}' | #sed 's/\->/ \-> /' | #Drop all spaces; put spaces around symbolic link arrow
 sort | uniq >> ../output/graph.txt
 echo '}' >> ../output/graph.txt
-
-dot -Grankdir=LR -Tpng ../output/graph.txt -o ../output/task_flow.png

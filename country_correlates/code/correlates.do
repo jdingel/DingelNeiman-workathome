@@ -1,4 +1,10 @@
-clear 
+clear all
+
+foreach package in blindschemes {
+    capture which `package'
+    if _rc==111 ssc install `package'
+}
+set scheme plotplainblind
 
 //Load country-level GDP per capita, PPP
 import delim using "../input/WEO_Data.xls", rowrange(1:194) clear

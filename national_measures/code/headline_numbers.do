@@ -26,7 +26,8 @@ quietly summarize teleworkable_emp
 local tele_emp = string(100*`r(mean)',"%3.0f")
 quietly summarize teleworkable_wage
 local tele_wage = string(100*`r(mean)',"%3.0f")
-shell echo -n "Approximately `tele_emp' percent of all U.S. jobs, accounting for `tele_wage' percent of overall wages, can be performed almost entirely at home.%" > ../output/headline_manual.tex
+shell echo -n "Approximately `tele_emp' percent of all US jobs, accounting for `tele_wage' percent of overall wages, can be performed entirely at home.%" > ../output/headline_manual.tex
+shell echo -n "`tele_emp' percent of all US jobs can be performed entirely at home.%" > ../output/headline_manual_shortfragment.tex
 
 //Report teachers caveat
 use `tf_merged_manual', clear
@@ -77,8 +78,8 @@ quietly summarize teleworkable_emp
 local tele_emp = string(100*`r(mean)',"%3.0f")
 quietly summarize teleworkable_wage
 local tele_wage = string(100*`r(mean)',"%3.0f")
-shell echo -n "Our classification implies that `tele_emp' percent of U.S. jobs can plausibly be performed at home.%" > ../output/headline_topicsentence_onet.tex
-shell echo -n "the `tele_emp' percent of U.S. jobs that can plausibly be performed at home account for `tele_wage' percent of all wages.%"  > ../output/headline_onet.tex
+shell echo -n "Our classification implies that `tele_emp' percent of US jobs can plausibly be performed at home.%" > ../output/headline_topicsentence_onet.tex
+shell echo -n "the `tele_emp' percent of US jobs that can plausibly be performed at home account for `tele_wage' percent of all wages.%"  > ../output/headline_onet.tex
 
 //Report teachers caveat
 use `tf_merged_onet', clear
@@ -92,4 +93,4 @@ local tele_emp = string(100*`r(mean)',"%3.0f")
 quietly summarize emp_denom
 local total_teachers = string(`r(mean)'/1000000,"%3.1fc")
 shell echo -n "Our scheme classifies `tele_emp' percent of `total_teachers' teachers as able to work from home." > ../output/teachers_caveat_onet.tex
-shell echo -n "our classification codes `tele_emp' percent of the `total_teachers' million teachers in the U.S. as able to work from home,%" > ../output/teachers_caveat_fragment_onet.tex
+shell echo -n "our classification codes `tele_emp' percent of the `total_teachers' million teachers in the United States as able to work from home,%" > ../output/teachers_caveat_fragment_onet.tex
