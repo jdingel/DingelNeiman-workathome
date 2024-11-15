@@ -1,16 +1,9 @@
-## Definitions
-FOLDERS = ../input ../output slurmlogs
-INPUTS_DATA = 	../input/ONET_Work_Context.txt ../input/ONET_Work_Context_Categories.txt ../input/ONET_Occupation_Data.txt ../input/ONET_Work_Activities.txt
-
-## Recipes
 all: ../output/onet_teleworkable.dta ../output/occupations_workathome.csv
 
-#Folders recipes
-$(FOLDERS):
-	mkdir $@
-#Inputs recipes
-../input/ONET_Work_Context.txt ../input/ONET_Work_Context_Categories.txt ../input/ONET_Occupation_Data.txt ../input/ONET_Work_Activities.txt: | ../input
-	if [ -e ../../downloaddata/output/$(@F) ] ; then ln -s ../../downloaddata/output/$(@F) $@ ; else exit 1; fi
-#Outputs recipes
-../output/onet_teleworkable.dta ../output/occupations_workathome.csv: onet_characteristics.do $(INPUTS_DATA) | ../output
+include ../../generic.make
+
+../output/onet_teleworkable.dta ../output/occupations_workathome.csv: onet_characteristics.do $(shell grep -o '../input/[A-Za-z0-9_]*.txt' onet_characteristics.do) | ../output
 	stata-se -e $<
+
+../input/ONET%.txt: ../../downloaddata/output/ONET%.txt | ../input
+	ln -s $< $@

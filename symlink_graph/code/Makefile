@@ -1,7 +1,6 @@
 all: ../output/task_flow.png
 
-../output:
-	mkdir $@
+include ../../generic.make
 
 ../output/graph.txt: graphmaker.sh | ../output
 	bash graphmaker.sh

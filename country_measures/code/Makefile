@@ -1,23 +1,14 @@
 ## Definitions
-FOLDERS = ../input ../output
-INPUTS_DATA = ../input/ilostat-2020-04-10.csv ../input/ISCO_SOC_Crosswalk.xls ../input/national_M2018_dl.xlsx ../input/oes_2019_hybrid_structure.xlsx ../input/onet_teleworkable_blscodes.dta ../input/WEO_Data.xls
-OUTPUTS = ../output/country_isco08_telework.dta
+INPUTS_DATA = $(addprefix ../input/, national_M2018_dl.xlsx oes_2019_hybrid_structure.xlsx ilostat-2020-04-10.csv ISCO_SOC_Crosswalk.xls WEO_Data.xls)
 
 ## Recipes
 all: ../output/country_isco08_telework.dta
+include ../../generic.make
 
-#Folders recipes
-$(FOLDERS):
-	mkdir $@
-#Inputs recipes
-
-../input/national_M2018_dl.xlsx ../input/oes_2019_hybrid_structure.xlsx ../input/ilostat-2020-04-10.csv: | ../input
-	if [ -e ../../downloaddata/output/$(@F) ] ; then ln -s ../../downloaddata/output/$(@F) $@ ; else exit 1; fi
-../input/ISCO_SOC_Crosswalk.xls ../input/WEO_Data.xls: | ../input
-	if [ -e ../../downloaddata/output/$(@F) ] ; then ln -s ../../downloaddata/output/$(@F) $@ ; else exit 1; fi
-../input/onet_teleworkable_blscodes.dta: | ../input
-	if [ -e ../../onet_to_BLS_crosswalk/output/$(@F) ] ; then ln -s ../../onet_to_BLS_crosswalk/output/$(@F) $@ ; else exit 1; fi
-
-#Outputs recipes
-../output/country_isco08_telework.dta: country_level_measures.do $(INPUTS_DATA) | ../output
+../output/country_isco08_telework.dta: country_level_measures.do $(shell grep -o '../input/[A-Za-z0-9_\-]*\.[a-z]*' country_level_measures.do) | ../output
 	stata-se -e $<
+
+$(INPUTS_DATA): ../input/%: ../../downloaddata/output/% | ../input
+	ln -s $< $@
+../input/onet_teleworkable_blscodes.dta: ../../onet_to_BLS_crosswalk/output/onet_teleworkable_blscodes.dta | ../input
+	ln -s $< $@
