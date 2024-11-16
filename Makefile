@@ -10,7 +10,7 @@ all:
 	make -C MSA_measures/code
 	make -C MSA_traits/code
 	make -C MSA_maps_tables/code
-	make -C symlink_graph/code
 	make -C country_measures/code
 	make -C country_correlates/code
 	make -C country_crisisoutcomes/code
+	make -C symlink_graph/code
