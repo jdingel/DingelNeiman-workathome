@@ -9,9 +9,7 @@ $(addprefix ../output/state_, workfromhome.csv 2018_teleworkable_onet.dta 2018_t
 ../../downloaddata/output/state_M2018_dl.xlsx: 
 	$(MAKE) -C ../../downloaddata/code -f ../../downloaddata/code/Makefile_state
 
-../input/national_M2018_dl.xlsx: ../input/%: ../../downloaddata/output/% | ../input
-	ln -s $< $@
-../input/state_M2018_dl.xlsx: ../input/%: ../../downloaddata/output/% | ../input
+../input/state_M2018_dl.xlsx ../input/national_M2018_dl.xlsx: ../input/%: ../../downloaddata/output/% | ../input
 	ln -s $< $@
 ../input/onet_teleworkable_blscodes.dta: ../../onet_to_BLS_crosswalk/output/onet_teleworkable_blscodes.dta  | ../input
 	ln -s $< $@
