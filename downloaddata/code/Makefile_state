@@ -9,7 +9,7 @@ all: ../output/state_M2018_dl.xlsx
 
 #Occupational Employment Statistics
 ../output/oesm18st.zip: | ../output
-	curl https://www.bls.gov/oes/special.requests/oesm18st.zip > $@
+	wget --user-agent="youraddress@domain.edu" https://www.bls.gov/oes/special.requests/$(@F) -O $@
 ../output/state_M2018_dl.xlsx: | ../output/oesm18st.zip
 	unzip ../output/oesm18st.zip -d ../output
 	mv -v ../output/oesm18st/* ../output/
